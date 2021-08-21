@@ -1,0 +1,24 @@
+{
+  "name": "riverview",
+  "version": "1.0.0",
+  "description": "> 리바이스터디 사이드 프로젝트. 리버 뷰",
+  "main": "index.js",
+  "engine": {
+    "node": "",
+    "npm": ""
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "back": "nodemon server/index.js",
+    "front": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "author": "rejamong",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
