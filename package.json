@@ -11,7 +11,7 @@
     "start": "node server/index.js",
     "back": "nodemon server/index.js",
     "front": "npm run start --prefix client",
-    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+    "dev": "concurrently \"npm run back\" \"npm run front\""
   },
   "author": "rejamong",
   "license": "ISC",

@@ -9,6 +9,7 @@ import Transaction from './transaction';
 function App() {
   return (
     <div className="App">
+      hello
       <Switch>
         {/* <Route path="/" component={Dashboard} /> */}
         <Route path="/ticker" component={Ticker} />
