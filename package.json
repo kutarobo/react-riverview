@@ -11,14 +11,31 @@
     "start": "node server/index.js",
     "back": "nodemon server/index.js",
     "front": "npm run start --prefix client",
-    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+    "dev": "concurrently \"npm run back\" \"npm run front\""
   },
   "author": "rejamong",
   "license": "ISC",
   "dependencies": {
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "airbnb",
+      "prettier"
+    ],
+    "rules": {
+      "react/prefer-stateless-function": 0,
+      "react/jsx-filename-extension": 0,
+      "react/jsx-one-expression-per-line": 0
+    },
+    "env": {
+      "browser": true
+    }
   }
 }
